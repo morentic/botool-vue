@@ -65,6 +65,11 @@ export default {
 <template>
   <div class="max-w-md mx-auto">
     <div
+      class="p-3 absolute top-2 right-2 h-12 bg-sky-950 border-white border-2"
+    >
+      {{ time }}
+    </div>
+    <div
       v-for="(buildStep, index) in buildOrder"
       :key="index"
       class="grid grid-cols-2 items-center m-2 p-3 bg-purple-500 font-bold"
