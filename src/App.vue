@@ -72,7 +72,7 @@ export default {
       ref="buildStepRefs"
     >
       <div>{{ buildStep.at }}</div>
-      <ul>
+      <ul class="list-disc">
         <li v-for="(instruction, index) in buildStep.instructions" :key="index">
           {{ instruction }}
         </li>
