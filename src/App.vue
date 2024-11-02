@@ -32,7 +32,12 @@ export default {
             tmp[index].active = true;
             this.buildOrder = tmp;
             await nextTick();
-            this.$refs.buildStepRefs[index].scrollIntoView();
+
+            if (index !== 0) {
+              this.$refs.buildStepRefs[index - 1].scrollIntoView();
+            } else {
+              this.$refs.buildStepRefs[index].scrollIntoView();
+            }
           }
 
           const lastItem = this.buildOrder.slice(-1)[0];
