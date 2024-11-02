@@ -21,8 +21,6 @@ export default {
       }
 
       this.interval = setInterval(() => {
-        console.log(this.time);
-
         this.buildOrder.map(async (item, index) => {
           if (this.time === item.time) {
             const tmp = this.buildOrder;
