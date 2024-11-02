@@ -37,6 +37,7 @@ export default {
 
           const lastItem = this.buildOrder.slice(-1)[0];
           if (this.time === lastItem.time) {
+            clearInterval(this.interval);
             this.running = false;
             this.time = 1;
             return;
