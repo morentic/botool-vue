@@ -1,0 +1,113 @@
+{
+  "name": "Protoss Platin",
+  "lastTime": 14,
+  "buildOrder": [
+    {
+      "time": 2,
+      "at": 14,
+      "instructions": ["Pylon"],
+      "active": false
+    },
+    {
+      "time": 4,
+      "at": 16,
+      "instructions": ["Gas"],
+      "active": false
+    },
+    {
+      "time": 6,
+      "at": 20,
+      "instructions": ["Core"],
+      "active": false
+    },
+    {
+      "time": 8,
+      "at": 21,
+      "instructions": ["2. Gas"],
+      "active": false
+    },
+    {
+      "time": 10,
+      "at": 22,
+      "instructions": ["Pylon"],
+      "active": false
+    },
+    {
+      "time": 12,
+      "at": "@Core finishes",
+      "instructions": ["Stalker", "Warpgate", "Chrono"],
+      "active": false
+    },
+    {
+      "time": 14,
+      "at": "@100 Gas",
+      "instructions": ["Observer", "Immortal"],
+      "active": false
+    },
+    {
+      "time": 16,
+      "at": "33",
+      "instructions": ["2 Gates", "Pylon"],
+      "active": false
+    },
+    {
+      "time": 18,
+      "at": "@Warpgate finishes",
+      "instructions": ["3 Stalker"],
+      "active": false
+    },
+    {
+      "time": 20,
+      "at": "@12 worker at natural",
+      "instructions": ["3./4. Gas"],
+      "active": false
+    },
+    {
+      "time": 22,
+      "at": "50-55",
+      "instructions": [
+        "2. Robo",
+        "Robo Bay",
+        "2 Colossus",
+        "Extenden thermal lance"
+      ],
+      "active": false
+    },
+    {
+      "time": 24,
+      "at": "70",
+      "instructions": ["Cut probes"],
+      "active": false
+    },
+    {
+      "time": 26,
+      "at": "@",
+      "instructions": ["Nexus", "Probing"],
+      "active": false
+    },
+    {
+      "time": 28,
+      "at": "@",
+      "instructions": ["Twilight Council", "Charge"],
+      "active": false
+    },
+    {
+      "time": 30,
+      "at": "@",
+      "instructions": ["Forge", "+1 Attack"],
+      "active": false
+    },
+    {
+      "time": 32,
+      "at": "@",
+      "instructions": ["5 Gates"],
+      "active": false
+    },
+    {
+      "time": 34,
+      "at": "@",
+      "instructions": ["Templar Archives"],
+      "active": false
+    }
+  ]
+}

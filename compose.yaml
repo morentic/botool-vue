@@ -1,0 +1,10 @@
+services:
+  node:
+    image: node:latest
+    user: node
+    working_dir: /home/node/app
+    volumes:
+      - ./:/home/node/app
+    ports:
+      - '5173:5173'
+    tty: true
