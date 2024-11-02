@@ -7,13 +7,9 @@ export default {
   data() {
     return {
       buildOrder: data.buildOrder,
-      active: false,
       running: false,
       time: 1,
     };
-  },
-  created() {
-    scrollTo(0, 0);
   },
   methods: {
     startStop() {
@@ -50,29 +46,47 @@ export default {
         this.time = this.time + 1;
       }, 1000);
     },
+    reset() {
+      clearInterval(this.interval);
+      this.time = 1;
+      window.scrollTo(0, 0);
+      this.buildOrder.map((item, index) => {
+        item.active && (this.buildOrder[index].active = false);
+      });
+    },
   },
 };
 </script>
 
 <template>
-  <div
-    v-for="(buildStep, index) in buildOrder"
-    :key="index"
-    class="grid grid-cols-2 items-center m-2 p-3 bg-purple-500 font-bold"
-    :class="{ 'border-2 border-white text-4xl py-12': buildStep.active }"
-    ref="buildStepRefs"
-  >
-    <div>{{ buildStep.at }}</div>
-    <ul>
-      <li v-for="(instruction, index) in buildStep.instructions" :key="index">
-        {{ instruction }}
-      </li>
-    </ul>
+  <div class="max-w-md mx-auto">
+    <div
+      v-for="(buildStep, index) in buildOrder"
+      :key="index"
+      class="grid grid-cols-2 items-center m-2 p-3 bg-purple-500 font-bold"
+      :class="{ 'border-2 border-white text-4xl py-12': buildStep.active }"
+      ref="buildStepRefs"
+    >
+      <div>{{ buildStep.at }}</div>
+      <ul>
+        <li v-for="(instruction, index) in buildStep.instructions" :key="index">
+          {{ instruction }}
+        </li>
+      </ul>
+    </div>
+    <div class="sticky bottom-0 flex bg-purple-500 m-2">
+      <button
+        class="m-1 p-3 bg-purple-500 w-full h-24 border-2 border-white"
+        @click="startStop"
+      >
+        {{ running ? 'Stop' : 'Start' }}
+      </button>
+      <button
+        class="m-1 p-3 bg-purple-500 w-full h-24 border-2 border-white"
+        @click="reset"
+      >
+        Reset
+      </button>
+    </div>
   </div>
-  <button
-    class="sticky bottom-0 p-3 bg-purple-500 w-full h-24 border-2 border-white"
-    @click="startStop"
-  >
-    {{ running ? 'Stop' : 'Start' }}
-  </button>
 </template>
