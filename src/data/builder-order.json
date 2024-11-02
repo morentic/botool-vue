@@ -20,7 +20,13 @@
       "active": false
     },
     {
-      "time": 85,
+      "time": 97,
+      "at": 20,
+      "instructions": ["Nexus"],
+      "active": false
+    },
+    {
+      "time": 101,
       "at": 20,
       "instructions": ["Core"],
       "active": false
