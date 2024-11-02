@@ -52,7 +52,7 @@ export default {
     },
     reset() {
       clearInterval(this.interval);
-      this.time = 390;
+      this.time = 1;
       window.scrollTo(0, 0);
       this.buildOrder.map((item, index) => {
         item.active && (this.buildOrder[index].active = false);
