@@ -74,7 +74,7 @@ export default {
         </li>
       </ul>
     </div>
-    <div class="sticky bottom-0 flex bg-purple-500 m-2">
+    <div class="sticky bottom-0 flex bg-white m-2">
       <button
         class="m-1 p-3 bg-purple-500 w-full h-24 border-2 border-white"
         @click="startStop"
