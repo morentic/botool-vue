@@ -63,7 +63,11 @@ export default {
     ref="buildStepRefs"
   >
     <div>{{ buildStep.at }}</div>
-    <div>{{ buildStep.instructions }}</div>
+    <ul>
+      <li v-for="(instruction, index) in buildStep.instructions" :key="index">
+        {{ instruction }}
+      </li>
+    </ul>
   </div>
   <button
     class="sticky bottom-0 p-3 bg-purple-500 w-full h-24 border-2 border-white"
