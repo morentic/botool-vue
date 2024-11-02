@@ -1,69 +1,74 @@
 {
   "name": "Protoss Platin",
-  "lastTime": 14,
   "buildOrder": [
     {
-      "time": 2,
+      "time": 19,
       "at": 14,
       "instructions": ["Pylon"],
       "active": false
     },
     {
-      "time": 4,
+      "time": 38,
       "at": 16,
-      "instructions": ["Gate", "Gas"],
+      "instructions": ["Gate"],
       "active": false
     },
     {
-      "time": 6,
+      "time": 46,
+      "at": 16,
+      "instructions": ["1. Gas"],
+      "active": false
+    },
+    {
+      "time": 85,
       "at": 20,
       "instructions": ["Core"],
       "active": false
     },
     {
-      "time": 8,
+      "time": 107,
       "at": 21,
       "instructions": ["2. Gas"],
       "active": false
     },
     {
-      "time": 10,
+      "time": 112,
       "at": 22,
       "instructions": ["Pylon"],
       "active": false
     },
     {
-      "time": 12,
+      "time": 135,
       "at": "@Core finishes",
       "instructions": ["Stalker", "Warpgate", "Chrono"],
       "active": false
     },
     {
-      "time": 14,
+      "time": 147,
       "at": "@100 Gas",
       "instructions": ["Robo", "Observer", "Immortal"],
       "active": false
     },
     {
-      "time": 16,
+      "time": 190,
       "at": "33",
       "instructions": ["2 Gates", "Pylon"],
       "active": false
     },
     {
-      "time": 18,
+      "time": 233,
       "at": "@Warpgate finishes",
       "instructions": ["3 Stalker"],
       "active": false
     },
     {
-      "time": 20,
+      "time": 240,
       "at": "@12 worker at natural",
       "instructions": ["3./4. Gas"],
       "active": false
     },
     {
-      "time": 22,
+      "time": 264,
       "at": "50-55",
       "instructions": [
         "2. Robo",
@@ -74,37 +79,37 @@
       "active": false
     },
     {
-      "time": 24,
+      "time": 280,
       "at": "70",
       "instructions": ["Cut probes"],
       "active": false
     },
     {
-      "time": 26,
+      "time": 300,
       "at": "@",
       "instructions": ["Nexus", "Probing"],
       "active": false
     },
     {
-      "time": 28,
+      "time": 320,
       "at": "@",
       "instructions": ["Twilight Council", "Charge"],
       "active": false
     },
     {
-      "time": 30,
+      "time": 321,
       "at": "@",
       "instructions": ["Forge", "+1 Attack"],
       "active": false
     },
     {
-      "time": 32,
+      "time": 390,
       "at": "@",
       "instructions": ["5 Gates"],
       "active": false
     },
     {
-      "time": 34,
+      "time": 405,
       "at": "@",
       "instructions": ["Templar Archives"],
       "active": false
