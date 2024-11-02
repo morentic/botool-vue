@@ -1,14 +1,20 @@
-<script>
+<script lang="ts">
 import './assets/main.css';
 import data from './data/builder-order.json';
-import { nextTick } from 'vue';
+import { nextTick, ref } from 'vue';
 
 export default {
+  setup() {
+    const buildStepRefs = ref<Array<HTMLDivElement>>([]);
+
+    return { buildStepRefs };
+  },
   data() {
     return {
       buildOrder: data.buildOrder,
       running: false,
       time: 1,
+      interval: 0,
     };
   },
   methods: {
@@ -32,9 +38,9 @@ export default {
             await nextTick();
 
             if (index !== 0) {
-              this.$refs.buildStepRefs[index - 1].scrollIntoView();
+              this.buildStepRefs[index - 1].scrollIntoView();
             } else {
-              this.$refs.buildStepRefs[index].scrollIntoView();
+              this.buildStepRefs[index].scrollIntoView();
             }
           }
         });
