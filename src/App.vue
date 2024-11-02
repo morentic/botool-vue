@@ -37,22 +37,22 @@ export default {
               this.$refs.buildStepRefs[index].scrollIntoView();
             }
           }
-
-          const lastItem = this.buildOrder.slice(-1)[0];
-          if (this.time === lastItem.time) {
-            clearInterval(this.interval);
-            this.running = false;
-            this.time = 1;
-            return;
-          }
         });
+
+        const lastItem = this.buildOrder.slice(-1)[0];
+        if (this.time === lastItem.time) {
+          clearInterval(this.interval);
+          this.running = false;
+          this.time = 1;
+          return;
+        }
 
         this.time = this.time + 1;
       }, 1000);
     },
     reset() {
       clearInterval(this.interval);
-      this.time = 1;
+      this.time = 390;
       window.scrollTo(0, 0);
       this.buildOrder.map((item, index) => {
         item.active && (this.buildOrder[index].active = false);
